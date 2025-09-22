@@ -1,0 +1,7 @@
+requests         # For Hugging Face + GitHub API calls
+PyGithub         # For bus factor (contributors via GitHub API)
+pytest           # Testing framework
+pytest-cov       # For coverage reports (>=80% required)
+flake8           # Linter
+isort            # Import sorting
+mypy             # Static type checking
