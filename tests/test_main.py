@@ -4,8 +4,9 @@ from cli.main import process_url
 def test_process_url_github_repo():
     result = process_url("https://github.com/psf/requests")
     assert "net_score" in result
-    assert "license" in result
-    assert "size" in result
+    # repo2 uses 'license_score' and 'size_score' keys
+    assert "license_score" in result
+    assert "size_score" in result
     assert result["category"] == "REPO"
 
 def test_process_url_hf_model():
