@@ -54,32 +54,4 @@ When the CLI processes a single URL it follows these steps in order:
    - The combined result is printed as compact JSON (no extra whitespace),
      one line per input URL.
 
-## Notes & troubleshooting
-
-- The metrics make HTTP calls to public APIs (Hugging Face, GitHub). To avoid
-  rate limits when calling GitHub frequently set a `GITHUB_TOKEN` environment
-  variable in your shell.
-- The CLI is intentionally small and synchronous for easier testing and
-  predictability. If you expect to run many URLs, consider batching or
-  parallelizing the calls.
-- To run the test that compares repo1 vs repo2 outputs, run pytest from
-  `phase2/repo2`:
-
-```bash
-python3 -m pytest -q
-```
-
-## Where to look in the code
-
-- `cli/main.py` — main orchestration: builds metric list, merges results, and
-  prints NDJSON.
-- `cli/metrics/base.py` — small MetricCalculator helper; subclass metrics must
-  implement `calculate(url)` and can use `timed_calculate(url)` to auto-add
-  latency.
-- `cli/metrics/*.py` — individual metric implementations. When modifying a
-  metric, keep behavior deterministic (avoid randomization) so tests can
-  compare output across implementations.
-
-If you'd like, I can also run the integration tests and fix any remaining
-issues so the repo is fully runnable in CI-style tests.
 
