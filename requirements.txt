@@ -18,25 +18,5 @@ mypy>=1.0.0                 # Optional static type checker
 # black>=24.8.0            # Popular code formatter
 # pre-commit>=3.6.2        # Git hooks
 
-# Notes:
-# - huggingface-hub is not required because the repo uses plain HTTP calls to HF APIs (requests).
-# - If you add heavy ML code (transformers, torch), add those packages separately.
-# Core runtime dependencies
-requests>=2.28.0            # HTTP client used across cli/url_handler and metrics
-PyGithub>=1.58.0            # Optional helpers for GitHub (some utilities may use it)
 
-# Testing / CI
-pytest>=7.2.0               # Testing framework
-pytest-cov>=4.0.0           # Coverage plugin for pytest
-coverage[toml]>=7.10.6      # Coverage backend (pytest-cov requires coverage >=7.10.6)
-requests-mock>=1.9.3       # Helpful for mocking HTTP in tests
-
-# Linters / formatting / type checking
-flake8>=6.0.0               # Linter
-isort>=5.12.0               # Import sorter
-mypy>=1.0.0                 # Optional static type checker
-
-# Optional / developer tools (commented — enable as needed)
-# black>=24.8.0            # Popular code formatter
-# pre-commit>=3.6.2        # Git hooks
 
