@@ -7,7 +7,7 @@ dependencies from `requirements.txt`, and show how to run the CLI and tests.
 1) Open a terminal (zsh) and change to the repo folder
 
 ```bash
-cd /Users/hehkle/Desktop/SWE/phase2/repo2
+cd to path
 ```
 
 2) Create and activate a virtual environment
