@@ -40,6 +40,3 @@ mypy>=1.0.0                 # Optional static type checker
 # black>=24.8.0            # Popular code formatter
 # pre-commit>=3.6.2        # Git hooks
 
-# Notes:
-# - huggingface-hub is not required because the repo uses plain HTTP calls to HF APIs (requests).
-# - If you add heavy ML code (transformers, torch), add those packages separately.
