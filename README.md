@@ -1,2 +1,2 @@
-### [specification]([https://docs.google.com/document/d/121bVLche-f17CLjwZkcWLizQS1GzmXq_/edit?usp=sharing&ouid=110062512509548266862&rtpof=true&sd=true](https://docs.google.com/document/d/1NWiuwE5Wed-GJe0kkOqNTdrLqy6LxcoW/edit))
-### [plan]([[https://docs.google.com/document/d/121bVLche-f17CLjwZkcWLizQS1GzmXq_/edit?usp=sharing&ouid=110062512509548266862&rtpof=true&sd=true](https://docs.google.com/document/d/1NWiuwE5Wed-GJe0kkOqNTdrLqy6LxcoW/edit](https://docs.google.com/document/d/1Pi7RIyCG_YTDKf9OB2fm8Qpr_6PD3Okw/edit)))
+### [specification](https://docs.google.com/document/d/1NWiuwE5Wed-GJe0kkOqNTdrLqy6LxcoW/edit)
+### [plan](https://docs.google.com/document/d/1Pi7RIyCG_YTDKf9OB2fm8Qpr_6PD3Okw/edit)
