@@ -39,6 +39,7 @@ def process_url(url: str):
     for metric in metrics:
         metrics_results.update(metric.timed_calculate(url))
 
+
     # Compute net_score as weighted sum
     # size_score is an object; average its values for aggregation
     size_obj = metrics_results.get("size_score", None)

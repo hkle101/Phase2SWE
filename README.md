@@ -1,7 +1,19 @@
 ### [specification](https://docs.google.com/document/d/1NWiuwE5Wed-GJe0kkOqNTdrLqy6LxcoW/edit)
 ### [plan](https://docs.google.com/document/d/1Pi7RIyCG_YTDKf9OB2fm8Qpr_6PD3Okw/edit)
 
-# Repo2 CLI (metrics runner)
+
+# Architecture
+
+web/CLI → HTTP Request →  api server →  Logic →  S3
+
+# API specification
+
+1. Upload
+2. Rate
+3. Download
+
+
+# CLI metrics runner
 
 This folder contains a small CLI that runs several repository/model/dataset
 quality metrics and prints one compact NDJSON record per input URL.
