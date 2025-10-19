@@ -6,7 +6,7 @@
 #   ./run test       -> run pytest
 #   ./run <file>     -> run CLI with provided URL file
 
-set -euo pipefail
+#set -euo pipefail
 
 cmd=${1:-}
 
