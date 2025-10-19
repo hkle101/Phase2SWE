@@ -14,8 +14,6 @@ GH_COMMITS_API = (
 
 
 class BusFactorMetric(MetricCalculator):
-    """Estimate bus factor of a repository based on unique commit authors."""
-
     def __init__(self):
         super().__init__("bus_factor")
         self.score: float = -1.0
