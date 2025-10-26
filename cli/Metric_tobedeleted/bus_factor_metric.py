@@ -6,7 +6,7 @@ import requests
 import logging
 from typing import Dict, Any, List, Set, Optional
 from cli.metrics.base import MetricCalculator
-from cli.url_handler import fetch_metadata
+from phase2.repo2.cli.utils.MetadataFetcher import fetch_metadata
 
 GH_COMMITS_API = (
     "https://api.github.com/repos/{repo}/commits?per_page={per_page}"

@@ -32,6 +32,49 @@ python3 -m cli.main urls.txt
 
 See `SETUP.md` for step-by-step local setup and virtualenv instructions (macOS/zsh).
 
+Windows Quick start
+
+From the repo folder on Windows you can either use the included wrappers
+or run the module directly with Python.
+
+Command Prompt (cmd.exe):
+
+```cmd
+run.bat urls.txt
+# or run interactively
+run.bat
+```
+
+PowerShell:
+
+```powershell
+.\run.ps1 urls.txt
+# or run interactively
+.\run.ps1
+```
+
+Direct Python invocation (cross-platform):
+
+```powershell
+python -m cli.main urls.txt
+```
+
+If you use a virtualenv on Windows, activate it first:
+
+PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Command Prompt:
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
+
 2. Each printed line is a compact JSON object with metric scores and latency
    fields. Example keys: `name`, `category`, `net_score`, `ramp_up_time`,
    `ramp_up_time_latency`, `performance_claims`, `performance_claims_latency`, etc.

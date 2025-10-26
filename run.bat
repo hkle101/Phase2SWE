@@ -1,4 +1,5 @@
 @echo off
+<<<<<<< HEAD
 REM ------------------------------------------------------------------
 REM run.bat - Windows wrapper to run the project's CLI and helpers
 REM
@@ -46,4 +47,36 @@ if exist "%~1" (
 REM Default: forward all arguments to the CLI module `cli.main`.
 python -m cli.main %*
 endlocal
+=======
+REM Simple runner for repo2 (Windows cmd)
+REM Usage:
+REM   run.bat            -> run CLI (interactive)
+REM   run.bat install    -> pip install --user -r requirements.txt
+REM   run.bat test       -> run pytest
+REM   run.bat <file>     -> run CLI with provided URL file
+
+setlocal
+set "cmd=%~1"
+
+if /I "%cmd%"=="install" (
+    pip install --user -r requirements.txt
+    exit /b 0
+)
+
+if /I "%cmd%"=="test" (
+    REM Try pytest; if it fails, run without coverage
+    python -m pytest -q
+    exit /b 0
+)
+
+if not "%cmd%"=="" (
+    if exist "%cmd%" (
+        python -m cli.main "%cmd%"
+        exit /b 0
+    )
+)
+
+REM Default: start CLI module
+python -m cli.main
+>>>>>>> 4e5cd2f6ab79e343b16bf9008acf2a7f3920ad27
 exit /b 0

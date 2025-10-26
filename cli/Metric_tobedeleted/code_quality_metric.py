@@ -5,7 +5,7 @@ import logging
 from typing import Any, Dict, List, Optional
 import requests
 from cli.metrics.base import MetricCalculator
-from cli.url_handler import (
+from phase2.repo2.cli.utils.MetadataFetcher import (
     classify_url,
     extract_github_repo,
     fetch_metadata,
