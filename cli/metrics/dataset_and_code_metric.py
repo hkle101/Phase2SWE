@@ -3,7 +3,7 @@ import logging
 from typing import Dict, Any, Optional
 import requests
 from cli.metrics.base import MetricCalculator
-from cli.url_handler import fetch_metadata
+from phase2.repo2.cli.utils.MetadataFetcher import fetch_metadata
 
 
 class DatasetAndCodeMetric(MetricCalculator):

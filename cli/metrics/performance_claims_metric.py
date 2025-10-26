@@ -3,7 +3,7 @@ from typing import Any, Dict
 import time
 import logging
 from cli.metrics.base import MetricCalculator
-from cli.url_handler import fetch_metadata
+from phase2.repo2.cli.utils.MetadataFetcher import fetch_metadata
 
 
 class PerformanceClaimsMetric(MetricCalculator):
